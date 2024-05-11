@@ -1,10 +1,37 @@
-# Team Data Science Project Template
+# Predicción del Valor de Mercado de Vehículos Usados en Colombia
 
-Esta plantilla es una implementación de la plantilla de proyecto de Team Data Science Process que actualmente se utiliza en el "Programa de Formación en Machine Learning y Data Science" en la Universidad Nacional de Colombia.
+Objetivo: Desarrollar un modelo de Machine Learning para predecir el valor de mercado de vehículos usados en Colombia con precisión, utilizando el dataset Fasecolda.
 
-Esta plantilla proporciona las siguientes carpetas y archivos:
+Alcance:
 
-* `src`: acá debe ir el código o implementación del proyecto en Python.
-* `docs`: en esta carpeta se encuentran las plantillas de los documentos definidos en la metodología.
-* `scripts`: esta carpeta debe contener los scripts/notebooks que se ejecutarán.
-* `pyproject.toml`: archivo de definición del proyecto en Python.
+Integrar y enriquecer datos de Fasecolda.
+Análisis exploratorio profundo para identificar patrones y tendencias.
+Modelado de Machine Learning de última generación (redes neuronales profundas, conjuntos de modelos).
+Evaluación rigurosa del desempeño (MSE, R^2, AUC).
+Despliegue en plataforma web o aplicación móvil escalable y accesible.
+Metodología: CRISP-DM.
+
+Cronograma: 7 fases en 7 semanas o menos
+
+Equipo: Kevin Suarez
+
+Beneficios:
+
+Empoderamiento a propietarios de vehículos.
+Optimización para compañías de seguros.
+Revolución en plataformas de compraventa.
+Tecnologías: Python, Pandas, NumPy, Matplotlib, Seaborn, Machine Learning, plataforma web/aplicación móvil (opcional).
+
+Impacto:
+
+Compraventa de vehículos usados justa y eficiente.
+Transparencia en el mercado automotriz colombiano.
+Reducción de costos asociados a la compraventa.
+Información valiosa para todos los involucrados.
+Próximos Pasos:
+
+Implementar y desplegar el modelo.
+Pruebas exhaustivas.
+Retroalimentación de usuarios y refinamiento del modelo.
+Actualización del modelo con datos en tiempo real (explorar).
+Integración con plataformas de compraventa existentes (investigar).
