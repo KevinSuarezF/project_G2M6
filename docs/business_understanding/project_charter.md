@@ -55,6 +55,7 @@ Las fechas pueden varias de acuerdo a adelantos o atrasos de acuerdo a la revisi
 ## Equipo del Proyecto
 
 - Kevin Suarez Fontecha - líder del proyecto
+- Luis Ángel Mazabuel García
 
 ## Presupuesto
 
