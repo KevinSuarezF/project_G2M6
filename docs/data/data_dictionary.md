@@ -5,7 +5,7 @@
 Información obtenida del dataset FASECOLDA con información de características y registro de vehículos en Colombia.
 
 | Variable | Descripción | Tipo de dato | Rango/Valores posibles |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | Novedad | ... | STRING | "M", "N", "A" |
 | Marca | Marca/fabricante del vehículo | STRING | Múltiples Categorías |
 | Clase | Clase/Tipo de vehículo | STRING | Múltiples Categorías |
