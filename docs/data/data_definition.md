@@ -14,8 +14,8 @@ La carga de datos se realiza desde __init__.py (src/nombre_paquete/__init__.py) 
 
 Ubicación de los archivos de origen de los datos: Los archivos de origen están disponibles en Kaggle. Se pueden descargar desde la página del dataset: https://www.kaggle.com/datasets/panchicore/vehicles-colombia-fasecolda/data
 
-Estructura de los archivos de origen de los datos: Los datos están en formato CSV. Las columnas típicas incluyen Marca, Modelo, Año, Precio, entre otras.
+Estructura de los archivos de origen de los datos: Los datos están en formato CSV. Las columnas típicas incluyen Marca, Modelo, Precio por año, entre otras.
 
 ### Base de datos de destino
 
-Los datos se van a manejar en jupyter notebook, donde despues de realizar la recoleccion de datos, se realiza el preprocesamiento y de ser necesario se almacenaria en src/nombre_paquete/database, o en la memoria de la maquina virtual/local, por lo que el proceso de entrenamiento y validación se realizan directamente allí.
+Los datos se van a manejar por el momento en el repositorio, donde despues de realizar la recoleccion de datos, se realiza el preprocesamiento y de ser necesario se almacenaria en src/nombre_paquete/database, o en la memoria de la maquina virtual/local, por lo que el proceso de entrenamiento y validación se realizan directamente allí.
