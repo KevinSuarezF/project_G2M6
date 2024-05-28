@@ -44,38 +44,41 @@ La variable endógena que se busca estimar es: **Precio2018**
 
 ### Métricas de evaluación
 
-Descripción de las métricas utilizadas para evaluar el rendimiento del modelo: Se utilizará el coeficiente de determinación *R^2* como métrica principal para evaluar el rendimiento del modelo baseline.
+Descripción de las métricas utilizadas para evaluar el rendimiento del modelo: Se utilizará el coeficiente de determinación *R^2* y Explained Variance Score (puntuación de varianza explicada), de ahora en adelante llamadas *R^2* y *EVS* respectivamente, como métricas principales para evaluar el rendimiento del modelo baseline y posteriores modelos.
 
 ### Resultados de evaluación
 
-Tras realizar el entrenamiento del modelo y su respectiva evaluación obtuvimos un coeficiente de determinación *R^2* de 47.49% para este modelo base sin análisis ni optimización de hiperpárametros:
-
-![Evaluación del modelo](image.png)
+Tras realizar el entrenamiento del modelo y su respectiva evaluación obtuvimos un coeficiente de determinación *R^2* y *EVS* de 47.49% y 50.14% para este modelo base sin análisis ni optimización de hiperpárametros
 
 ## Análisis de los resultados
 
 Tras realizar el entrenamiento de este modelo base se obtiene un umbral que esperamos superar con futuras configuraciones y experimentos enfocados en las diversas opciones que tenemos de modificar la etapa de modelado para mejorar el rendimiento y la capacidad de predecir de nuestro modelo.
 
-Un coeficiente de determinación *R^2* de casi 48% no está mal para empezar, sin embargo entre más logremos aumentar esta métrica mejor será el modelo que permitirá al negocio realizar las predicciones de precios de vehículos en Colombia.
+Un coeficiente de determinación *R^2* de casi 48% y *EVS* de 50% no está mal para empezar, sin embargo entre más logremos aumentar esta métrica mejor será el modelo que permitirá al negocio realizar las predicciones de precios de vehículos en Colombia.
 
 ## Otros Modelos
 
 ![Evaluación de modelos](modelos_r2.png)
 
-* RandomForestRegressor: Este modelo muestra un rendimiento significativamente mejor que el modelo baseline, con un coeficiente de determinación (R2) de 0.881. Esto indica que el RandomForestRegressor explica aproximadamente el 88.1% de la variabilidad en los datos.
-* GradientBoostingRegressor: Con un coeficiente de determinación (R2) de 0.895, el GradientBoostingRegressor supera al modelo baseline, demostrando una mejora en la capacidad de explicar la variabilidad en los datos.
-* XGBRegressor: Con el coeficiente de determinación (R2) más alto de 0.909, el XGBRegressor es el mejor modelo en términos de explicar la variabilidad en los datos.
-* KNeighborsRegressor: Este modelo también supera al modelo baseline con un coeficiente de determinación (R2) de 0.856, lo que indica una mejora significativa en la capacidad de predecir la variable objetivo en comparación con el modelo baseline.
+
+![Evaluación de modelos](modelos_evs.png)
+
+* RandomForestRegressor: Este modelo muestra un rendimiento significativamente mejor que el modelo baseline, con un coeficiente de determinación (R2) y EVS de 0.881. Esto indica que el RandomForestRegressor explica aproximadamente el 88.1% de la variabilidad en los datos.
+* GradientBoostingRegressor: Con un coeficiente de determinación (R2) y EVS de 0.895, el GradientBoostingRegressor supera al modelo baseline, demostrando una mejora en la capacidad de explicar la variabilidad en los datos.
+* XGBRegressor: Con el coeficiente de determinación (R2) y EVS más altos de 0.909, el XGBRegressor es el mejor modelo en términos de explicar la variabilidad en los datos.
+* KNeighborsRegressor: Este modelo también supera al modelo baseline con un coeficiente de determinación (R2) de 0.856 y EVS de 0.857, lo que indica una mejora significativa en la capacidad de predecir la variable objetivo en comparación con el modelo baseline.
 
 * Fortalezas:
-RandomForestRegressor, GradientBoostingRegressor y XGBRegressor tienen un rendimiento notablemente alto en términos de R2.
-KNeighborsRegressor muestra un rendimiento sólido.
+RandomForestRegressor, GradientBoostingRegressor y XGBRegressor tienen un rendimiento notablemente alto en términos de R2 y EVS.
+KNeighborsRegressor muestra un rendimiento sólido y rápido en términos de tiempo de procesamiento.
 
 * Debilidades:
-El modelo baseline tiene un rendimiento inferior en comparación con los otros modelos en términos de R2, lo que nos indica la importancia del análisis de los hiperparámetros.
+El modelo baseline tiene un rendimiento inferior en comparación con los otros modelos en términos de R2 y EVS, lo que nos indica la importancia del análisis de los hiperparámetros.
 
 ## Conclusiones
 
-Tras los resultados obtenidos se percibe un avance en la capacidad de predicción del precio de los vehículos en Colombia para el año 2018. Frente a la necesidad del negocio estamos obteniendo un 48% de ajuste del modelo frente a las estimaciones de precios, lo cual es positivo debida la complejidad del proyecto y refleja igualmente una buena selección de características iniciales en el proyecto.
+Tras los resultados obtenidos se percibe un avance en la capacidad de predicción del precio de los vehículos en Colombia para el año 2018. Frente a la necesidad del negocio estamos obteniendo un 48% de ajuste del modelo frente a las estimaciones de precios como modelo de partida, lo cual es positivo debida la complejidad del proyecto y refleja igualmente una buena selección de características iniciales en el proyecto.
 
 Los modelos RandomForestRegressor, GradientBoostingRegressor, XGBRegressor y KNeighborsRegressor han demostrado una mejora significativa en la capacidad de explicar y predecir la variable objetivo en comparación con el modelo baseline. Se recomienda explorar más estos modelos y realizar ajustes de hiperparámetros para mejorar aún más su precisión.
+
+Se toma el modelo XGBRegressor como mejor modelo de acuerdo con los resultados obtenidos de *R2* y *EVS*.

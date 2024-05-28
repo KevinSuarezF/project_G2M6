@@ -2,7 +2,7 @@
 
 ## Resumen Ejecutivo
 
-El modelo final desarrollado, basado en XGBoost Regressor, ha demostrado un rendimiento sobresaliente en la métrica de evaluación R^2, con un valor de 0.909. Este modelo supera significativamente al modelo base y otros modelos analizados, como Random Forest Regressor, Gradient Boosting Regressor y K Neighbors Regressor. Los hiperparámetros óptimos para el modelo XGBoost son {'n_estimators': 385, 'max_depth': 10, 'learning_rate': 0.0574}, obtenidos mediante un análisis exhaustivo de hiperparámetros.
+El modelo final desarrollado, basado en XGBoost Regressor, ha demostrado un rendimiento sobresaliente en las métricas de evaluación R^2 y EVS, con un valor de 0.909 para ambas. Este modelo supera significativamente al modelo base y otros modelos analizados, como Random Forest Regressor, Gradient Boosting Regressor y K Neighbors Regressor. Los hiperparámetros óptimos para el modelo XGBoost son {'n_estimators': 385, 'max_depth': 10, 'learning_rate': 0.0574}, obtenidos mediante un análisis exhaustivo de hiperparámetros.
 
 ## Descripción del Problema
 
@@ -14,7 +14,7 @@ El modelo final se basa en XGBoost (abreviatura de "extreme gradient boosting") 
 
 ## Evaluación del Modelo
 
-El modelo final se evaluó utilizando la métrica de R^2, que alcanzó un valor de 0.909. Este resultado indica que el modelo es capaz de explicar el 90.9% de la variabilidad en la variable objetivo. El tiempo de entrenamiento del modelo fue de aproximadamente 37 minutos en total, lo que refleja la complejidad computacional del proceso de optimización de hiperparámetros.
+El modelo final se evaluó utilizando las métricas de R^2 y EVS, que alcanzó un valor de 0.909 para ambas. Este resultado indica que el modelo es capaz de explicar aproximadamente el 91% de la variabilidad en la variable objetivo. El tiempo de entrenamiento del modelo fue de aproximadamente 38 minutos en total, lo que refleja la complejidad computacional del proceso de optimización de hiperparámetros.
 
 ## Conclusiones y Recomendaciones
 
