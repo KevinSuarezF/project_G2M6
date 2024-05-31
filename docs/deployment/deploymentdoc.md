@@ -19,7 +19,9 @@
 
 ## Código de despliegue
 
-- **Archivo principal:** `main.py`
+- **Archivo principal:**
+    - `main.py`
+    - `deployment.ipynb`
 - **Rutas de acceso a los archivos:**
     - `xgb_regressor.pkl`: Archivo que contiene el modelo XGBoost.
 - **Variables de entorno:**
