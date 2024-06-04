@@ -20,10 +20,10 @@
 ## Código de despliegue
 
 - **Archivo principal:**
-    - `main.py`
-    - `deployment.ipynb`
+    - `scripts/deploydeployment.ipynb`
+    - `scripts/deploy/mlapi/main.py` (Generado en la ejecución del notebook anterior)
 - **Rutas de acceso a los archivos:**
-    - `xgb_regressor.pkl`: Archivo que contiene el modelo XGBoost.
+    - `src/nombre_paquete/models/xgb_regressor.pkl`: Archivo que contiene el modelo XGBoost.
 - **Variables de entorno:**
     - No se utilizan variables de entorno en este ejemplo.
 
