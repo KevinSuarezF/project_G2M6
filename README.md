@@ -37,4 +37,4 @@
 * Pruebas exhaustivas.
 * Retroalimentación de usuarios y refinamiento del modelo.
 * Actualización del modelo con datos en tiempo real (explorar).
-* Integración con plataformas de compraventa existentes (investigar).
+* Integración con plataformas de compraventa existentes.
